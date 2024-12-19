@@ -21,15 +21,18 @@
                     <chart:NumericalAxis/>
                 </chart:SfCartesianChart.YAxes>
 
+                <chart:SfCartesianChart.TooltipBehavior>
+                    <chart:ChartTooltipBehavior x:Name="tooltip"/>
+                </chart:SfCartesianChart.TooltipBehavior>
+
                 <chart:ColumnSeries ItemsSource="{Binding Data}"
                                     XBindingPath="EmployeeName" 
-                                    YBindingPath="SalesRate"/>
-
+                                    YBindingPath="SalesRate"
+                                    EnableTooltip="True"/>
             </chart:SfCartesianChart>
 
             <HorizontalStackLayout Grid.Row="1" HorizontalOptions="Center">
                 <Button Text="Value To DataPoint" HeightRequest="30"  Clicked="Button_Clicked"/>
-                <Button Text="DataPoint To Value" HeightRequest="30" Margin="10,0,0,0" Clicked="Button_Clicked_1"/>
             </HorizontalStackLayout>
         </Grid>
     </ContentPage.Content>

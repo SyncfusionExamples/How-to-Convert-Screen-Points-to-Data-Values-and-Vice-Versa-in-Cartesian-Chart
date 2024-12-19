@@ -66,6 +66,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="DataPointToValueSample.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="DateTimeAxisSample.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

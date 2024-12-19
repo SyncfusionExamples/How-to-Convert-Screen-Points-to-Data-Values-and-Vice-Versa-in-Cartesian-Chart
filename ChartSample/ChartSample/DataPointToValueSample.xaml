@@ -3,27 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
              xmlns:local="clr-namespace:ChartSample"
-             x:Class="ChartSample.DateTimeAxisSample"
-             Title="DateTimeAxisSample">
+             x:Class="ChartSample.DataPointToValueSample"
+             Title="DataPointToValueSample">
 
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
 
-    <!--DateTimeAxis with Column Series-->
     <Grid Grid.Row="1" RowDefinitions="*,100" Margin="20">
-    <chart:SfCartesianChart x:Name="chart" Margin="20">
-        <chart:SfCartesianChart.XAxes>
+        <chart:SfCartesianChart x:Name="chart">
+            <chart:SfCartesianChart.XAxes>
                 <chart:DateTimeAxis x:Name="xAxis" IntervalType="Years" Interval="1">
                     <chart:DateTimeAxis.LabelStyle>
                         <chart:ChartAxisLabelStyle LabelFormat="yyyy-MMM" />
                     </chart:DateTimeAxis.LabelStyle>
                 </chart:DateTimeAxis>
-         </chart:SfCartesianChart.XAxes>
+            </chart:SfCartesianChart.XAxes>
 
-        <chart:SfCartesianChart.YAxes>
-           <chart:NumericalAxis/>
-        </chart:SfCartesianChart.YAxes>
+            <chart:SfCartesianChart.YAxes>
+                <chart:NumericalAxis/>
+            </chart:SfCartesianChart.YAxes>
 
             <chart:SfCartesianChart.TrackballBehavior>
                 <chart:ChartTrackballBehavior x:Name="trackball"/>
@@ -31,11 +30,18 @@
 
             <chart:ColumnSeries ItemsSource="{Binding Data}"
                                 XBindingPath="Year" 
-                                YBindingPath="SalesRate"/>
+                                YBindingPath="SalesRate"
+                                ShowTrackballLabel="True"
+                            ShowDataLabels="True">
+                <chart:ColumnSeries.DataLabelSettings>
+                    <chart:CartesianDataLabelSettings LabelPlacement="Inner"/>
+                </chart:ColumnSeries.DataLabelSettings>
+            </chart:ColumnSeries>
         </chart:SfCartesianChart>
 
-    <HorizontalStackLayout Grid.Row="1" HorizontalOptions="Center">
-            <Button Text="Value To DataPoint" HeightRequest="30"  Clicked="Button_Clicked"/>
+        <HorizontalStackLayout Grid.Row="1" HorizontalOptions="Center">
+            <Button Text=" DataPoint to Value" HeightRequest="30" Margin="10,0,0,0" Clicked="Button_Clicked1"/>
         </HorizontalStackLayout>
-</Grid>
+    </Grid>
+
 </ContentPage>

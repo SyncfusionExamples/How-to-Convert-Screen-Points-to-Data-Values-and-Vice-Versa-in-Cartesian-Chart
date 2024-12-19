@@ -14,5 +14,9 @@
     <ShellContent Title="DateTimeAxis"
                   ContentTemplate="{DataTemplate local:DateTimeAxisSample}"
                   Route="DateTimeAxisSample" />
+    
+    <ShellContent Title="DataPoint To Value"
+              ContentTemplate="{DataTemplate local:DataPointToValueSample}"
+              Route="DataPointToValueSample" />
 
 </Shell>
