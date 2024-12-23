@@ -16,7 +16,7 @@ namespace ChartSample
             {
                 //Convert chart point to screen point.
                 var xPoint = cartesianChart.ValueToPoint(cartesianChart.XAxes[0], 2);
-                var yPoint = cartesianChart.ValueToPoint(cartesianChart.YAxes[0], 40);
+                var yPoint = cartesianChart.ValueToPoint(cartesianChart.YAxes[0], 65);
 
                 tooltip.Show(xPoint, yPoint, true);
             }

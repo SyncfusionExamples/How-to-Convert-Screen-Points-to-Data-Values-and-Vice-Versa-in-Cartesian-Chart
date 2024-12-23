@@ -13,20 +13,21 @@ public partial class DataPointToValueSample : ContentPage
         if (chart is SfCartesianChart cartesianChart)
         {
             //Convert screen point to chart point.
-            var xValue = cartesianChart.PointToValue(cartesianChart.XAxes[0], 640, 100);
-            var yValue = cartesianChart.PointToValue(cartesianChart.YAxes[0], 640, 100);
+            var xValue = cartesianChart.PointToValue(cartesianChart.XAxes[0], 630, 100);
+            var yValue = cartesianChart.PointToValue(cartesianChart.YAxes[0], 630, 100);
 
             var text = new TextAnnotation()
             {
                 X1 = xValue,
                 Y1 = yValue,
-                Text = "Highest Sales Year",
+                Text = "Highest Sales Month",
                 CoordinateUnit = ChartCoordinateUnit.Axis
             };
             text.LabelStyle = new ChartAnnotationLabelStyle()
             {
-                Background = Color.FromArgb("#D76C82"),
-                FontSize = 15
+                Background = Color.FromArgb("#b37700"),
+                TextColor = Colors.White,
+                FontSize = 15, 
             };
 
             chart.Annotations.Add(text);

@@ -11,18 +11,18 @@
     </ContentPage.BindingContext>
 
     <!--DateTimeAxis with Column Series-->
-    <Grid Grid.Row="1" RowDefinitions="*,100" Margin="20">
+    <Grid  RowDefinitions="*,100" Margin="20">
     <chart:SfCartesianChart x:Name="chart" Margin="20">
         <chart:SfCartesianChart.XAxes>
-                <chart:DateTimeAxis x:Name="xAxis" IntervalType="Years" Interval="1">
+                <chart:DateTimeAxis x:Name="xAxis" Interval="1" IntervalType="Months">
                     <chart:DateTimeAxis.LabelStyle>
-                        <chart:ChartAxisLabelStyle LabelFormat="yyyy-MMM" />
+                        <chart:ChartAxisLabelStyle LabelFormat="MMM-dd" />
                     </chart:DateTimeAxis.LabelStyle>
                 </chart:DateTimeAxis>
          </chart:SfCartesianChart.XAxes>
 
         <chart:SfCartesianChart.YAxes>
-           <chart:NumericalAxis/>
+           <chart:NumericalAxis EdgeLabelsDrawingMode="Fit"/>
         </chart:SfCartesianChart.YAxes>
 
             <chart:SfCartesianChart.TrackballBehavior>
