@@ -34,9 +34,7 @@
             </chart:ColumnSeries>
         </chart:SfCartesianChart>
 
-        <HorizontalStackLayout Grid.Row="1" HorizontalOptions="Center">
-            <Button Text=" DataPoint to Value" HeightRequest="30" Margin="10,0,0,0" Clicked="Button_Clicked1"/>
-        </HorizontalStackLayout>
+        <Button Text=" DataPoint to Value" HeightRequest="30" Margin="30" Grid.Row="1" HorizontalOptions="Center" Clicked="Button_Clicked1"/>
     </Grid>
 
 </ContentPage>

@@ -14,7 +14,7 @@ public partial class DateTimeAxisSample : ContentPage
         {
             //Convert chart point to screen point.
             var xPoint = cartesianChart.ValueToPoint(cartesianChart.XAxes[0], new DateTime(2010,04,30).ToOADate());
-            var yPoint = cartesianChart.ValueToPoint(cartesianChart.YAxes[0], 40);
+            var yPoint = cartesianChart.ValueToPoint(cartesianChart.YAxes[0], 182);
 
             trackball.Show(xPoint, yPoint);
         }
