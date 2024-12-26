@@ -125,14 +125,7 @@ In this example, we convert a screen coordinate (pixel position) to the correspo
  }
  ```
  ![Visualize data point to value in a .NET Cartesian Chart](https://support.syncfusion.com/kb/agent/attachment/article/18515/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0MzM2Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.kTJIs32GTSBfyRT6smujuOZYgbWqFZ7qz7S9QqT4yng)
-## Github
-For more details, refer to the [Value to data point vice versa conversion sample](https://github.com/SyncfusionExamples/How-to-Convert-Screen-Points-to-Data-Values-and-Vice-Versa-in-Cartesian-Chart).
 
-## Conclusion:
-I hope you enjoyed learning about how to Convert Screen Points to Data Values and Vice Versa in [.NET MAUI Cartesian Chart.](https://help.syncfusion.com/maui/cartesian-charts/getting-started)
+## KB link
+For more details, refer to the [How to Convert Screen Points to Data Values and Vice Versa in .NET MAUI Chart (SfCartesianChart)?](https://support.syncfusion.com/agent/kb/18515).
 
-Refer to our [.NET MAUI Cartesian Chart’s feature tour page](https://www.syncfusion.com/maui-controls/maui-cartesian-charts) to know about its other groundbreaking feature representations. You can also explore our .[NET MAUI Chart documentation](https://help.syncfusion.com/maui/cartesian-charts/getting-started) to understand how to present and manipulate data.
-
-For current customers, you can check out our .NET MAUI components from the [License and Downloads page.](https://www.syncfusion.com/sales/teamlicense) If you are new to Syncfusion, try our 30-day [free trail](https://www.syncfusion.com/downloads/maui) to check out our .NET MAUI Chart and other .NET MAUI components.
-
-Please let us know in the following comments section if you have any queries or require clarifications. You can also contact us through our [support forums](https://www.syncfusion.com/forums), [Direct-Trac](https://support.syncfusion.com/create), or [feedback portal.](https://www.syncfusion.com/feedback/maui?control=sfcartesianchart) We are always happy to assist you!
