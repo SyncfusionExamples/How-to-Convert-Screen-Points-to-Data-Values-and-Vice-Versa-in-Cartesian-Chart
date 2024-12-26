@@ -127,5 +127,5 @@ In this example, we convert a screen coordinate (pixel position) to the correspo
  ![Visualize data point to value in a .NET Cartesian Chart](https://support.syncfusion.com/kb/agent/attachment/article/18515/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0MzM2Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.kTJIs32GTSBfyRT6smujuOZYgbWqFZ7qz7S9QqT4yng)
 
 ## KB link
-For more details, refer to the [How to Convert Screen Points to Data Values and Vice Versa in .NET MAUI Chart (SfCartesianChart)?](https://support.syncfusion.com/agent/kb/18515).
+For more details, refer to the [how to convert screen points to data values and vice versa in .NET MAUI SfCartesianChart KB](https://support.syncfusion.com/agent/kb/18515).
 
