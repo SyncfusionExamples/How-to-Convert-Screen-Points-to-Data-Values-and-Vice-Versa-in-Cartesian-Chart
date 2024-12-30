@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+             xmlns:local="clr-namespace:ChartSample"
+             x:Class="ChartSample.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <!--Numeric Axis with Column Series-->
+        <Grid RowDefinitions="*,100">
+            <chart:SfCartesianChart x:Name="chart">
+                <chart:SfCartesianChart.XAxes>
+                    <chart:CategoryAxis x:Name="xAxis"/>
+                </chart:SfCartesianChart.XAxes>
+
+                <chart:SfCartesianChart.YAxes>
+                    <chart:NumericalAxis EdgeLabelsDrawingMode="Fit"/>
+                </chart:SfCartesianChart.YAxes>
+
+                <chart:SfCartesianChart.TooltipBehavior>
+                    <chart:ChartTooltipBehavior x:Name="tooltip"/>
+                </chart:SfCartesianChart.TooltipBehavior>
+
+                <chart:ColumnSeries ItemsSource="{Binding Data}"
+                                    XBindingPath="EmployeeName" 
+                                    YBindingPath="SalesRate"
+                                    EnableTooltip="True"/>
+            </chart:SfCartesianChart>
+
+           <Button Grid.Row="1" Text="Value To DataPoint" HeightRequest="30" HorizontalOptions="Center"  Margin="30" Clicked="Button_Clicked"/>
+          
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
